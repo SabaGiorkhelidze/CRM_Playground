@@ -4,6 +4,7 @@ obj/**
 [Dd]ebug/
 [Rr]elease/
 *.nupkg
+Crm.*/obj/
 
 # Visual Studio
 .vs/
