@@ -1,9 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
-    <ProjectReference Include="..\Crm.Infrastructure\Crm.Infrastructure.csproj" />
-    <ProjectReference Include="..\Crm.Api\Crm.Api.csproj" />
+    <ProjectReference Include="..\Crm.Domain\Crm.Domain.csproj" />
   </ItemGroup>
-
-
 </Project>

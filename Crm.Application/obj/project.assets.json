@@ -1,11 +1,30 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "Crm.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Crm.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Crm.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Crm.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Crm.Domain/Crm.Domain.csproj",
+      "msbuildProject": "../Crm.Domain/Crm.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "Crm.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Saba\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Saba\\Desktop\\CRM-Backend-Learning\\Crm.Domain\\Crm.Domain.csproj": {
+              "projectPath": "C:\\Users\\Saba\\Desktop\\CRM-Backend-Learning\\Crm.Domain\\Crm.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

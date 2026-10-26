@@ -36,6 +36,42 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Crm.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Crm.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Crm.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Crm.Application.dll": {}
+        }
+      },
+      "Crm.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Crm.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Crm.Domain.dll": {}
+        }
+      },
+      "Crm.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Crm.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Crm.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Crm.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -75,10 +111,27 @@
         "microsoft.openapi.2.12.2.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "Crm.Application/1.0.0": {
+      "type": "project",
+      "path": "../Crm.Application/Crm.Application.csproj",
+      "msbuildProject": "../Crm.Application/Crm.Application.csproj"
+    },
+    "Crm.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Crm.Domain/Crm.Domain.csproj",
+      "msbuildProject": "../Crm.Domain/Crm.Domain.csproj"
+    },
+    "Crm.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Crm.Infrastructure/Crm.Infrastructure.csproj",
+      "msbuildProject": "../Crm.Infrastructure/Crm.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Crm.Application >= 1.0.0",
+      "Crm.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.14"
     ]
   },
@@ -114,7 +167,14 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Saba\\Desktop\\CRM-Backend-Learning\\Crm.Application\\Crm.Application.csproj": {
+              "projectPath": "C:\\Users\\Saba\\Desktop\\CRM-Backend-Learning\\Crm.Application\\Crm.Application.csproj"
+            },
+            "C:\\Users\\Saba\\Desktop\\CRM-Backend-Learning\\Crm.Infrastructure\\Crm.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Saba\\Desktop\\CRM-Backend-Learning\\Crm.Infrastructure\\Crm.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

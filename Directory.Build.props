@@ -7,4 +7,3 @@
     <WarningsAsErrors>$(WarningsAsErrors);nullable</WarningsAsErrors>
   </PropertyGroup>
 </Project>
-Then delete the <Pr

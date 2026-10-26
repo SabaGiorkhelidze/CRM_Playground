@@ -5,4 +5,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.14" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\Crm.Application\Crm.Application.csproj" />
+    <ProjectReference Include="..\Crm.Infrastructure\Crm.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
