@@ -1,0 +1,30 @@
+# Build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.nupkg
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Local secrets and environment files
+*.env
+appsettings.*.local.json
+
+# Mentor files (remove these two lines if you want them in the repo)
+/CLAUDE.md
+/PROGRESS.md
